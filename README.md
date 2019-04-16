@@ -2,8 +2,7 @@
 
 **Neteller driver for the Omnipay PHP payment processing library**
 
-[![Build Status](https://travis-ci.org/samyan/omnipay-neteller.svg?branch=master)](https://travis-ci.org/samyan/omnipay-neteller)
-[![Coverage Status](https://coveralls.io/repos/samyan/omnipay-neteller/badge.svg?branch=master&service=github)](https://coveralls.io/github/samyan/omnipay-neteller?branch=master)
+[![Build Status](https://travis-ci.org/samyan/omnipay-neteller.svg?branch=master)](https://travis-ci.org/SamYan/omnipay-neteller)
 
 [![Latest Stable Version](https://poser.pugx.org/samyan/omnipay-neteller/v/stable.png)](https://packagist.org/packages/samyan/omnipay-neteller)
 [![Total Downloads](https://poser.pugx.org/samyan/omnipay-neteller/downloads.png)](https://packagist.org/packages/samyan/omnipay-neteller)
