@@ -29,6 +29,6 @@ install:
   - if [[ $setup = 'lowest' ]]; then travis_retry composer update --prefer-dist --no-interaction --prefer-lowest --prefer-stable; fi
 
 script:
-- composer validate --strict
-- vendor/bin/phpcs --standard=PSR2 src
-- vendor/bin/phpunit --coverage-text
+  - composer validate --strict
+  #- vendor/bin/phpcs --standard=PSR2 src
+  - vendor/bin/phpunit --coverage-text
