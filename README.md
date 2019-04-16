@@ -6,7 +6,6 @@
 
 [![Latest Stable Version](https://poser.pugx.org/samyan/omnipay-neteller/v/stable.png)](https://packagist.org/packages/samyan/omnipay-neteller)
 [![Total Downloads](https://poser.pugx.org/samyan/omnipay-neteller/downloads.png)](https://packagist.org/packages/samyan/omnipay-neteller)
-[![Latest Unstable Version](https://poser.pugx.org/samyan/omnipay-neteller/v/unstable.png)](https://packagist.org/packages/samyan/omnipay-neteller)
 [![License](https://poser.pugx.org/samyan/omnipay-neteller/license.png)](https://packagist.org/packages/samyan/omnipay-neteller)
 
 [Omnipay](https://github.com/omnipay/omnipay) is a framework agnostic, multi-gateway payment
