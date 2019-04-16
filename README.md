@@ -19,7 +19,7 @@ to your `composer.json` file:
 ```json
 {
     "require": {
-        "samyan/omnipay-neteller": "~1.0"
+        "samyan/omnipay-neteller": "~2.0.0"
     }
 }
 ```
