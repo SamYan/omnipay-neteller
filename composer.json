@@ -1,5 +1,5 @@
 {
-  "name": "dercoder/omnipay-neteller",
+  "name": "samyan/omnipay-neteller",
   "type": "library",
   "description": "Neteller driver for the Omnipay payment processing library",
   "keywords": [
@@ -10,7 +10,7 @@
     "pay",
     "payment"
   ],
-  "homepage": "https://github.com/dercoder/omnipay-neteller",
+  "homepage": "https://github.com/samyan/omnipay-neteller",
   "license": "MIT",
   "autoload": {
     "psr-4": {
