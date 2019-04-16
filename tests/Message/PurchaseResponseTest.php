@@ -8,7 +8,7 @@ class PurchaseResponseTest extends TestCase
     public function testFailure()
     {
         $httpResponse = $this->getMockHttpResponse('PurchaseFailure.txt');
-        $data = $httpResponse->json();
+        $data = json_decode($httpResponse->getBody()->getContents(), true);
 
         $response = new PurchaseResponse($this->getMockRequest(), $data);
 
@@ -26,7 +26,7 @@ class PurchaseResponseTest extends TestCase
     public function testSuccess()
     {
         $httpResponse = $this->getMockHttpResponse('PurchaseSuccess.txt');
-        $data = $httpResponse->json();
+        $data = json_decode($httpResponse->getBody()->getContents(), true);
 
         $response = new PurchaseResponse($this->getMockRequest(), $data);
 

@@ -80,7 +80,7 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
     {
         $headers = array(
             'Content-Type'  => 'application/json',
-            'Authorization' => $this->createBearerAuthorization()
+            'Authorization' => $this->createBasicAuthorization()
         );
 
         $uri = $this->createUri('oauth2/token', array(

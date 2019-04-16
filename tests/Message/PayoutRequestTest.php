@@ -38,7 +38,8 @@ class PayoutRequestTest extends TestCase
         $this->assertSame('454651018446', $data['payeeProfile']['accountId']);
 
         $this->request->setAccount('SomeInvalidAccount');
-        $this->setExpectedException('Omnipay\Common\Exception\InvalidRequestException', 'The account parameter must be an email or numeric value');
+        $this->expectException('Omnipay\Common\Exception\InvalidRequestException');
+        $this->expectExceptionMessage('The account parameter must be an email or numeric value');
         $this->request->getData();
     }
 

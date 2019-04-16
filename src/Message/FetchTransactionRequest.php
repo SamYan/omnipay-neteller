@@ -21,22 +21,16 @@ class FetchTransactionRequest extends AbstractRequest
     public function getData()
     {
         if ($transactionId = $this->getTransactionId()) {
-
             return array(
                 'id'      => (string) $transactionId,
                 'refType' => 'merchantRefId'
             );
-
         } elseif ($transactionReference = $this->getTransactionReference()) {
-
             return array(
                 'id' => (string) $transactionReference
             );
-
         } else {
-
             throw new InvalidRequestException('The transactionId or transactionReference parameter is required');
-
         }
     }
 

@@ -8,7 +8,7 @@ class FetchTransactionResponseTest extends TestCase
     public function testFailure()
     {
         $httpResponse = $this->getMockHttpResponse('FetchTransactionFailure.txt');
-        $data = $httpResponse->json();
+        $data = json_decode($httpResponse->getBody()->getContents(), true);
 
         $response = new FetchTransactionResponse($this->getMockRequest(), $data);
 
@@ -26,7 +26,7 @@ class FetchTransactionResponseTest extends TestCase
     public function testSuccess()
     {
         $httpResponse = $this->getMockHttpResponse('FetchTransactionSuccess.txt');
-        $data = $httpResponse->json();
+        $data = json_decode($httpResponse->getBody()->getContents(), true);
 
         $response = new FetchTransactionResponse($this->getMockRequest(), $data);
 
