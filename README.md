@@ -2,13 +2,13 @@
 
 **Neteller driver for the Omnipay PHP payment processing library**
 
-[![Build Status](https://travis-ci.org/dercoder/omnipay-neteller.svg?branch=master)](https://travis-ci.org/dercoder/omnipay-neteller)
-[![Coverage Status](https://coveralls.io/repos/dercoder/omnipay-neteller/badge.svg?branch=master&service=github)](https://coveralls.io/github/dercoder/omnipay-neteller?branch=master)
+[![Build Status](https://travis-ci.org/samyan/omnipay-neteller.svg?branch=master)](https://travis-ci.org/samyan/omnipay-neteller)
+[![Coverage Status](https://coveralls.io/repos/samyan/omnipay-neteller/badge.svg?branch=master&service=github)](https://coveralls.io/github/samyan/omnipay-neteller?branch=master)
 
-[![Latest Stable Version](https://poser.pugx.org/dercoder/omnipay-neteller/v/stable.png)](https://packagist.org/packages/dercoder/omnipay-neteller)
-[![Total Downloads](https://poser.pugx.org/dercoder/omnipay-neteller/downloads.png)](https://packagist.org/packages/dercoder/omnipay-neteller)
-[![Latest Unstable Version](https://poser.pugx.org/dercoder/omnipay-neteller/v/unstable.png)](https://packagist.org/packages/dercoder/omnipay-neteller)
-[![License](https://poser.pugx.org/dercoder/omnipay-neteller/license.png)](https://packagist.org/packages/dercoder/omnipay-neteller)
+[![Latest Stable Version](https://poser.pugx.org/samyan/omnipay-neteller/v/stable.png)](https://packagist.org/packages/samyan/omnipay-neteller)
+[![Total Downloads](https://poser.pugx.org/samyan/omnipay-neteller/downloads.png)](https://packagist.org/packages/samyan/omnipay-neteller)
+[![Latest Unstable Version](https://poser.pugx.org/samyan/omnipay-neteller/v/unstable.png)](https://packagist.org/packages/samyan/omnipay-neteller)
+[![License](https://poser.pugx.org/samyan/omnipay-neteller/license.png)](https://packagist.org/packages/samyan/omnipay-neteller)
 
 [Omnipay](https://github.com/omnipay/omnipay) is a framework agnostic, multi-gateway payment
 processing library for PHP 5.3+. This package implements [Neteller](http://www.neteller.com) support for Omnipay.
