@@ -30,5 +30,5 @@ install:
 
 script:
 - composer validate --strict
-#- vendor/bin/phpcs --standard=PSR2 src
+- vendor/bin/phpcs --standard=PSR2 src
 - vendor/bin/phpunit --coverage-text
