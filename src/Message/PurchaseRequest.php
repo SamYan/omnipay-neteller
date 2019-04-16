@@ -91,11 +91,12 @@ class PurchaseRequest extends AbstractRequest
         $uri = $this->createUri('transferIn');
 
         try {
-            $response = $this->httpClient->post($uri, $headers, json_encode($data))->send();
+            $response = $this->httpClient->request('POST', $uri, $headers, json_encode($data));
+            $responseData = json_decode($response->getBody()->getContents(), true);
         } catch (BadResponseException $e) {
-            $response = $e->getResponse();
+            $responseData = $e->getResponse();
         }
 
-        return new PurchaseResponse($this, $response->json());
+        return new PurchaseResponse($this, $responseData);
     }
 }

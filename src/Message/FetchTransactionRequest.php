@@ -58,11 +58,12 @@ class FetchTransactionRequest extends AbstractRequest
         $uri = $this->createUri('payments/' . $id, $data);
 
         try {
-            $response = $this->httpClient->get($uri, $headers)->send();
+            $response = $this->httpClient->request('GET', $uri, $headers);
+            $responseData = json_decode($response->getBody()->getContents(), true);
         } catch (BadResponseException $e) {
-            $response = $e->getResponse();
+            $responseData = $e->getResponse();
         }
 
-        return new FetchTransactionResponse($this, $response->json());
+        return new FetchTransactionResponse($this, $responseData);
     }
 }
